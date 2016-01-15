@@ -16,6 +16,13 @@ var path  = require('path'),
     title = 'weinre  '.inverse;
 
 
+// task set was turned off in gulp.js
+if ( !config ) {
+    // do not create tasks
+    return;
+}
+
+
 // start or restart service
 gulp.task('weinre', function ( done ) {
     var config  = load(cfg),
