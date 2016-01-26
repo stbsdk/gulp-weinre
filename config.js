@@ -7,24 +7,26 @@
 
 'use strict';
 
-var extend = require('extend'),
-    config = require('spa-gulp/config');
+var extend   = require('extend'),
+    config   = require('spa-gulp/config'),
+    profiles = {};
 
 
-// base config
-// each profile inherits all options from the "default" profile
-module.exports = extend(true, {}, config, {
-    default: {
-        // listening HTTP port to provide client interface
-        port: 8080,
+// main
+profiles.default = extend(true, {}, config, {
+    // listening HTTP port to provide client interface
+    port: 8080,
 
-        // address to listen
-        host: '-all-',
+    // address to listen
+    host: '-all-',
 
-        // full logging
-        logging: false,
+    // full logging
+    logging: false,
 
-        // debug servers session id
-        name: 'anonymous'
-    }
+    // debug servers session id
+    name: 'anonymous'
 });
+
+
+// public
+module.exports = profiles;
