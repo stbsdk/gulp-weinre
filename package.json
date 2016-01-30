@@ -12,6 +12,7 @@
         "jsdoc": "jsdoc --destination doc *.js readme.md"
     },
     "dependencies": {
+        "extend": "3.*.*",
         "stb-gulp": "stbsdk/gulp",
         "weinre": "2.0.0-pre-I0Z7U9OV"
     },
