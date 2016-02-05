@@ -1,15 +1,15 @@
 WEb INspector REmote tasks
 ==========================
 
-[![NPM version](https://img.shields.io/npm/v/stb-gulp-sass.svg?style=flat-square)](https://www.npmjs.com/package/stb-gulp-sass)
-[![Dependencies Status](https://img.shields.io/david/stbsdk/gulp-sass.svg?style=flat-square)](https://david-dm.org/stbsdk/gulp-sass)
+[![NPM version](https://img.shields.io/npm/v/stb-plugin-weinre.svg?style=flat-square)](https://www.npmjs.com/package/stb-plugin-weinre)
+[![Dependencies Status](https://img.shields.io/david/stbsdk/plugin-weinre.svg?style=flat-square)](https://david-dm.org/stbsdk/plugin-weinre)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/stbsdk)
 
 
 ## Installation ##
 
 ```bash
-npm install stb-gulp-sass
+npm install stb-plugin-weinre
 ```
 
 
@@ -18,16 +18,16 @@ npm install stb-gulp-sass
 Add to the scope:
 
 ```js
-var sass = require('stb-gulp-sass');
+var sass = require('stb-plugin-weinre');
 ```
 
 
 ## Contribution ##
 
-If you have any problem or suggestion please open an issue [here](https://github.com/stbsdk/gulp-sass/issues).
+If you have any problem or suggestion please open an issue [here](https://github.com/stbsdk/plugin-weinre/issues).
 Pull requests are welcomed with respect to the [JavaScript Code Style](https://github.com/DarkPark/jscs).
 
 
 ## License ##
 
-`stb-gulp-sass` is released under the [GPL-3.0 License](http://opensource.org/licenses/GPL-3.0).
+`stb-plugin-weinre` is released under the [GPL-3.0 License](http://opensource.org/licenses/GPL-3.0).
