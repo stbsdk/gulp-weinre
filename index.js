@@ -11,7 +11,7 @@ var path  = require('path'),
     load  = require('require-nocache')(module),
     cfg   = path.join(process.env.PATH_ROOT, process.env.PATH_CFG, 'weinre'),
     ip    = require('ip').address(),
-    title = 'weinre  '.inverse;
+    title = 'weinre  ';
 
 
 // task set was turned off in gulp.js
@@ -31,7 +31,7 @@ gulp.task('weinre', function ( done ) {
 
     if ( !config.active ) {
         // just exit
-        log(title, 'task is disabled'.grey);
+        log(title, 'task is disabled');
 
         done();
     }
@@ -48,17 +48,17 @@ gulp.task('weinre', function ( done ) {
     ]);
 
     weinre.on('exit', function () {
-        log(title, 'process terminated'.red);
+        log(title, 'process terminated');
 
         done();
     });
 
     weinre.on('error', function () {
-        log(title, 'FATAL ERROR'.red, '(check weinre is installed)');
+        log(title, 'FATAL ERROR', '(check weinre is installed)');
     });
 
     weinre.stderr.on('data', function ( data ) {
-        log(title, data.toString().trim().red);
+        log(title, data.toString().trim());
     });
 
     weinre.stdout.on('data', function ( data ) {
@@ -67,8 +67,8 @@ gulp.task('weinre', function ( done ) {
             isReady = true;
 
             log(title, hash);
-            log(title, 'WEb INspector REmote is ready!'.bold);
-            log(title, msg.green);
+            log(title, 'WEb INspector REmote is ready!');
+            log(title, msg);
             log(title, hash);
         } else {
             data.toString().trim().split('\n').forEach(function ( line ) {
