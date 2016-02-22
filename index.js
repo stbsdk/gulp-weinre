@@ -10,7 +10,7 @@ var path  = require('path'),
     log   = require('gulp-util').log,
     load  = require('require-nocache')(module),
     cfg   = path.join(process.env.PATH_ROOT, process.env.PATH_CFG, 'weinre'),
-    ip    = require('ip').address(),
+    app   = require('spasdk/lib/app'),
     title = 'weinre  ';
 
 
@@ -24,7 +24,7 @@ if ( !config ) {
 // start or restart service
 gulp.task('weinre', function ( done ) {
     var config  = load(cfg),
-        msg     = 'http://' + ip + ':' + config.port + '/client/#anonymous',
+        msg     = 'http://' + app.ip + ':' + config.port + '/client/#anonymous',
         hash    = new Array(msg.length + 1).join('-'),
         isReady = false,
         spawn, weinre;
