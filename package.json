@@ -21,9 +21,8 @@
         "stb",
         "stbsdk",
         "framework",
-        "gulp",
         "develop",
-        "task",
+        "plugin",
         "weinre",
         "server"
     ],
