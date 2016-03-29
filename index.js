@@ -24,7 +24,7 @@ if ( !config ) {
 // start or restart service
 gulp.task('weinre', function ( done ) {
     var config  = load(cfg),
-        msg     = 'http://' + app.ip + ':' + config.port + '/client/#anonymous',
+        msg     = 'http://' + app.host + ':' + config.port + '/client/#anonymous',
         hash    = new Array(msg.length + 1).join('-'),
         isReady = false,
         spawn, weinre;
