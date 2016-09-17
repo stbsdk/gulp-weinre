@@ -11,7 +11,8 @@
         "url": "https://github.com/stbsdk/plugin-weinre.git"
     },
     "scripts": {
-        "lint": "eslint *.js",
+        "lint": "eslint .",
+        "test": "npm run lint",
         "jsdoc": "jsdoc --destination doc *.js readme.md"
     },
     "dependencies": {
@@ -21,6 +22,7 @@
         "weinre": "2.0.0-pre-I0Z7U9OV"
     },
     "devDependencies": {
+        "eslint": "2.*.*",
         "stb-eslint-config": "stbsdk/eslint-config"
     },
     "keywords": [

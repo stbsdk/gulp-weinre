@@ -15,10 +15,10 @@ var path  = require('path'),
 
 
 // task set was turned off in gulp.js
-if ( !config ) {
-    // do not create tasks
-    return;
-}
+// if ( !config ) {
+//     // do not create tasks
+//     return;
+// }
 
 
 // start or restart service
@@ -62,7 +62,11 @@ gulp.task('weinre', function ( done ) {
     });
 
     weinre.stdout.on('data', function ( data ) {
-        if ( !isReady ) {
+        if ( isReady ) {
+            data.toString().trim().split('\n').forEach(function ( line ) {
+                log(title, line.trim().split(' weinre: ').pop());
+            });
+        } else {
             // first invoke
             isReady = true;
 
@@ -70,10 +74,6 @@ gulp.task('weinre', function ( done ) {
             log(title, 'WEb INspector REmote is ready!');
             log(title, msg);
             log(title, hash);
-        } else {
-            data.toString().trim().split('\n').forEach(function ( line ) {
-                log(title, line.trim().split(' weinre: ').pop());
-            });
         }
     });
 
