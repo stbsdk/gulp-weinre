@@ -1,9 +1,10 @@
 WEb INspector REmote tasks
 ==========================
 
-[![Build Status](https://img.shields.io/travis/stbsdk/plugin-weinre.svg?style=flat-square)](https://travis-ci.org/stbsdk/plugin-weinre)
-[![NPM version](https://img.shields.io/npm/v/stb-plugin-weinre.svg?style=flat-square)](https://www.npmjs.com/package/stb-plugin-weinre)
-[![Dependencies Status](https://img.shields.io/david/stbsdk/plugin-weinre.svg?style=flat-square)](https://david-dm.org/stbsdk/plugin-weinre)
+[![build status](https://img.shields.io/travis/stbsdk/plugin-weinre.svg?style=flat-square)](https://travis-ci.org/stbsdk/plugin-weinre)
+[![npm version](https://img.shields.io/npm/v/stb-plugin-weinre.svg?style=flat-square)](https://www.npmjs.com/package/stb-plugin-weinre)
+[![dependencies status](https://img.shields.io/david/stbsdk/plugin-weinre.svg?style=flat-square)](https://david-dm.org/stbsdk/plugin-weinre)
+[![devDependencies status](https://img.shields.io/david/dev/stbsdk/plugin-weinre.svg?style=flat-square)](https://david-dm.org/stbsdk/plugin-weinre?type=dev)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/stbsdk)
 
 
