@@ -22,7 +22,7 @@
         "weinre": "2.0.0-pre-I0Z7U9OV"
     },
     "devDependencies": {
-        "eslint": "3.*.*",
+        "eslint": "4.*.*",
         "stb-eslint-config": "1.*.*"
     },
     "keywords": [
